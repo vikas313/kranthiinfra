@@ -5,12 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import logo from "../../../public/resources/images/logo.png";
 import Footer from "../footer/page";
+import DrawerAppBar from "./drawerAppbar";
 // import logo from "../../public/resources/images/logo.png";
 export default function Navbar() {
   const path = usePathname();
   return (
     <>
-      <Box sx={{ height: 300, backgroundColor: "#9BE2DF" }}>
+      <Box sx={{ height: 80, backgroundColor: "#333333" }}>
         <Box
           sx={{
             display: "flex",
@@ -22,17 +23,18 @@ export default function Navbar() {
               <Image alt="logo" src={logo} width={50} height={50} />
             </Typography>
           </Box>
-          <Box sx={{ pt: 2 }}>
-            <Button sx={{ color: "black" }}>
+          {/* <Box sx={{ pt: 2 }}>
+            <Button sx={{ color: "#C8C8C8" }}>
               <Link href="/home">Home</Link>
             </Button>
-            <Button sx={{ color: "black" }}>
+            <Button sx={{ color: "#C8C8C8" }}>
               <Link href="/aboutus">About us</Link>
             </Button>
-            <Button sx={{ color: "black", transform: "none" }}>
+            <Button sx={{ color: "#C8C8C8", transform: "none" }}>
               <Link href="/aboutus">Contact us</Link>
             </Button>
-          </Box>
+          </Box> */}
+          <DrawerAppBar/>
         </Box>
         {/* <Typography sx={{ textAlign: "center", pt: 8, color: "" }}>
           {path === "/" ? "home" : path}

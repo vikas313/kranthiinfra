@@ -17,7 +17,8 @@ export default function Home() {
   console.log(path);
   return (
     <>
-      <Homepage/>
+        <Homepage />
+        {/* <Footer/> */}
     </>
   );
 }
