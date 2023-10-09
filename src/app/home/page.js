@@ -12,7 +12,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function Homepage() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <Box
       sx={{
@@ -24,7 +23,9 @@ export default function Homepage() {
     >
       <DrawerAppBar />
       <Box sx={{ textAlign: "center", pt: 10 }}>
-        <Typography sx={{fontFamily:'cursive'}} >WELCOME TO KRANTHI INFRATECH PVT LTD</Typography>
+        <Typography sx={{ fontFamily: "cursive" }}>
+          WELCOME TO KRANTHI INFRATECH PVT LTD
+        </Typography>
         <Image alt="logo" src={logo} height={"100vh"} width={"100vh"} />
       </Box>
       <Box>
@@ -77,7 +78,7 @@ export default function Homepage() {
           </Box>
         </Box>
       </Box>
-      <AboutUs/>
+      <AboutUs />
       <Contactus />
       <Footer />
     </Box>

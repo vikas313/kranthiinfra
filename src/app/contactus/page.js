@@ -16,8 +16,6 @@ import { usePathname } from "next/navigation";
 export default function ContactUs() {
   const pathname = usePathname();
   const isContactUs = pathname === "/contactus";
-
-  console.log(pathname);
   return (
     <>
       {/* <Navbar /> */}
