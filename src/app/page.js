@@ -16,9 +16,9 @@ export default function Home() {
   const path = usePathname();
   console.log(path);
   return (
-    <>
+    <Box  sx={{backgroundColor:'white'}} >
         <Homepage />
         {/* <Footer/> */}
-    </>
+    </Box>
   );
 }

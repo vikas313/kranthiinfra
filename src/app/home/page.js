@@ -7,16 +7,12 @@ import Image from "next/image";
 import { styled } from "@mui/system";
 import DrawerAppBar from "../components/drawerAppbar";
 import AboutUs from "../aboutus/page";
+import Contactus from "../contactus/page";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 export default function Homepage() {
-  const StyledBox = styled(Box)`
-    background-image: url(${logo}); /* Replace with the actual path to your image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* You can add more CSS properties as needed */
-  `;
-
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <Box
       sx={{
@@ -28,7 +24,7 @@ export default function Homepage() {
     >
       <DrawerAppBar />
       <Box sx={{ textAlign: "center", pt: 10 }}>
-        <Typography>WELCOME TO KRANTHI INFRATECH PVT LTD</Typography>
+        <Typography sx={{fontFamily:'cursive'}} >WELCOME TO KRANTHI INFRATECH PVT LTD</Typography>
         <Image alt="logo" src={logo} height={"100vh"} width={"100vh"} />
       </Box>
       <Box>
@@ -81,7 +77,8 @@ export default function Homepage() {
           </Box>
         </Box>
       </Box>
-      {/* <AboutUs/> */}
+      <AboutUs/>
+      <Contactus />
       <Footer />
     </Box>
   );
