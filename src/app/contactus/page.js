@@ -25,6 +25,7 @@ export default function ContactUs() {
           flexDirection: isContactUs ? "row" : "initial",
           WebkitAlignContent: isContactUs ? "space-between" : "initial",
           height: isContactUs ? "100vh" : "initial",
+          color: "black",
         }}
       >
         {/* <DrawerAppBar /> */}

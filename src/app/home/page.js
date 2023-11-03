@@ -19,6 +19,7 @@ export default function Homepage() {
         flexDirection: "column",
         WebkitAlignContent: "space-between",
         height: "100vh",
+        color: "black",
       }}
     >
       <DrawerAppBar />

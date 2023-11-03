@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 
 export default function AboutUs() {
   const pathname = usePathname();
-  console.log(pathname);
   const statusStyle = (status) => {
     switch (status) {
       case "aborted":
@@ -32,6 +31,7 @@ export default function AboutUs() {
           flexDirection: pathname === "/aboutus" && "row",
           WebkitAlignContent: pathname === "/aboutus" && "space-between",
           height: pathname === "/aboutus" && "100vh",
+          color: "black",
         }}
       >
         {/* <DrawerAppBar /> */}

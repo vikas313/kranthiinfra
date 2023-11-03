@@ -11,14 +11,15 @@ import logo from "../../public/resources/images/logo.png";
 import Navbar from "./components/navbar";
 import Homepage from "./home/page";
 import Footer from "./footer/page";
+import SinglePage from "./flowTwo/page";
 
 export default function Home() {
   const path = usePathname();
-  console.log(path);
   return (
-    <Box  sx={{backgroundColor:'white'}} >
-        <Homepage />
-        {/* <Footer/> */}
+    <Box>
+      {/* <Homepage /> */}
+      {/* <Footer/> */}
+      <SinglePage />
     </Box>
   );
 }
